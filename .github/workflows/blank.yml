@@ -168,7 +168,7 @@ jobs:
           find ${WORK_ROOT_DIR}/myutils/auto_exam -name "*.sh" -exec dos2unix {} \;
 
           cd ${WORK_ROOT_DIR}/scripts
-          sh build_server.sh ${BRANCH_NAME} || CheckLastResult
+          bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/build_server.sh ${BRANCH_NAME} || CheckLastResult
 
          
 
