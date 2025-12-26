@@ -168,10 +168,10 @@ jobs:
           find ${WORK_ROOT_DIR}/myutils/auto_exam -name "*.sh" -exec dos2unix {} \;
 
           cd ${WORK_ROOT_DIR}/scripts
-          bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/build_server.sh ${BRANCH_NAME} || CheckLastResult
+          bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/build_server.sh ${JENKINS_ENV_PATH} || CheckLastResult
 
 
-          # bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/publish_server.sh ${BRANCH_NAME} || CheckLastResult
+          # bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/publish_server.sh ${JENKINS_ENV_PATH} || CheckLastResult
          
 
       - name: Setup Debug Session
