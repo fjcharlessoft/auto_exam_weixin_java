@@ -170,6 +170,8 @@ jobs:
           cd ${WORK_ROOT_DIR}/scripts
           bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/build_server.sh ${BRANCH_NAME} || CheckLastResult
 
+
+          bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/publish_server.sh ${BRANCH_NAME} || CheckLastResult
          
 
       # - name: Setup Debug Session
