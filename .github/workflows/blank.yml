@@ -171,7 +171,7 @@ jobs:
           bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/build_server.sh ${JENKINS_ENV_PATH} || CheckLastResult
 
 
-          # bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/publish_server.sh ${JENKINS_ENV_PATH} || CheckLastResult
+          bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/publish_server.sh ${JENKINS_ENV_PATH} || CheckLastResult
          
 
       # - name: Setup Debug Session
