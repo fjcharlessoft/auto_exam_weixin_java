@@ -174,11 +174,11 @@ jobs:
           bash ${WORK_ROOT_DIR}/myutils/auto_exam/weixin_java/scripts/publish_server.sh ${BRANCH_NAME} || CheckLastResult
          
 
-      # - name: Setup Debug Session
-      #   uses: mxschmitt/action-tmate@v3
-      #   timeout-minutes: 15
-      #   with:
-      #     detached: true
+      - name: Setup Debug Session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 15
+        with:
+          detached: true
 
       # - name: Setup Debug Session
       #   uses: mxschmitt/action-tmate@v3
