@@ -6,7 +6,7 @@ name: CI
 on:
   repository_dispatch:
     types:
-      - auto_exam_weixin_java
+      - auto_exam_weixin_java_public_ci
   push:
     branches: [ '*' ]
   pull_request:
